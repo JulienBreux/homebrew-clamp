@@ -2,24 +2,24 @@
 class Clamp < Formula
   desc "Clamp is a useful tool to help to replace environment variables in any file using go template syntax."
   homepage "https://julienbreux.github.io/clamp/"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/JulienBreux/clamp/releases/download/v1.0.0/clamp_1.0.0_Darwin_x86_64.tar.gz"
-    sha256 "70e560ef7205821fe203a3f8ef1aceed8f80da2bfc0d3ec9f12bba84edaa5273"
+    url "https://github.com/JulienBreux/clamp/releases/download/v1.0.1/clamp_1.0.1_Darwin_x86_64.tar.gz"
+    sha256 "ee992c5b3d121cfe50a125376c9f197d6dd0b7eba44902f933fc37845beff20d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/JulienBreux/clamp/releases/download/v1.0.0/clamp_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "705fcc7e66069a39babc2dcdd7ba30cd114db84cbdd0c92ffb89c89b297bb130"
+      url "https://github.com/JulienBreux/clamp/releases/download/v1.0.1/clamp_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "ce91f0614259580182f35cac22443d930f100edf7280aad50e6a26c4b00a0e2b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/JulienBreux/clamp/releases/download/v1.0.0/clamp_1.0.0_Linux_arm64.tar.gz"
-        sha256 "b00ef9efe2144dc89afe1f4ca3a920cb85b19114e1fe3e62d978489bf7baac22"
+        url "https://github.com/JulienBreux/clamp/releases/download/v1.0.1/clamp_1.0.1_Linux_arm64.tar.gz"
+        sha256 "7299775d1314b8373130e9b137ad3007bea409f393ea66a7a2d3792b54228e7b"
       else
-        url "https://github.com/JulienBreux/clamp/releases/download/v1.0.0/clamp_1.0.0_Linux_armv6.tar.gz"
-        sha256 "40ad6cca8e48ef5089b3f1bbc0a3940f00f083499de87e088b603fd9d00036b1"
+        url "https://github.com/JulienBreux/clamp/releases/download/v1.0.1/clamp_1.0.1_Linux_armv6.tar.gz"
+        sha256 "c198fb7a2e8005f22218188487eb40d922f2c82d458472ffaea4c87e9096e1dd"
       end
     end
   end
