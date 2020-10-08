@@ -2,16 +2,16 @@
 class Clamp < Formula
   desc "Clamp is a useful tool to help to replace environment variables in any file using go template syntax."
   homepage "https://julienbreux.github.io/clamp/"
-  version "1.2.0"
+  version "1.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/JulienBreux/clamp/releases/download/v1.2.0/clamp_1.2.0_darwin_amd64.tar.gz"
-    sha256 "f1fc0fba97b03bff022a474a04eeecfd7ce445ffb3dc86d2575bc7992d217c6f"
+    url "https://github.com/JulienBreux/clamp/releases/download/v1.3.0/clamp_1.3.0_darwin_amd64.tar.gz"
+    sha256 "ede3627387619e8124a02391925e9e891d1f4d762b350c612167ea18b59109c9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/JulienBreux/clamp/releases/download/v1.2.0/clamp_1.2.0_linux_amd64.tar.gz"
-      sha256 "bcdbc0422ec495cdbc22080ebb30a83dea1744fbc683ad58c79e5ef0b6f3c241"
+      url "https://github.com/JulienBreux/clamp/releases/download/v1.3.0/clamp_1.3.0_linux_amd64.tar.gz"
+      sha256 "6c635cd3d3c23e789ef0fd8b81071a81d3efd17ea1ae90641a1c8a33dd03e1ec"
     end
   end
 
